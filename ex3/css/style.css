@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer, nav, aside, section, div  {
+    display: block;
+}
+
+body{
+    background-image: url("../images/body.PNG");
+    background-repeat: repeat-x;
+    background-attachment:fixed;
+}
+
+header {
+    background-color: rgb(48, 47, 46);
+    height: 100px;
+    padding-top: 1px;
+}
+
+#logo {
+    display: block;
+    background: url("../images/logo.png");
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 60px;
+    margin: 23px auto;
+}
+
+#wrapper, #wrapper3 {
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 934px;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+section{
+    background-color: rgb(48, 47, 46);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    height: 66px;
+    width: 100%;
+    background-color: rgb(48, 47, 46);
+}
+
+/*-------------------- layuot1 -------------------*/
+
+#lay1-main {
+    height: 833px;
+    width: 813px;
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+}
+
+aside{
+    height: 833px;
+    width: 184px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+#lay1-main > article:nth-child(1){
+    position: absolute;
+    background-color: white;
+    height: 300px;
+    width: 178px;
+    border: 0.5px solid black;
+    left: 23px;
+    top: 88px;
+}
+
+#lay1-main > article:nth-child(2){
+    position: absolute;
+    background-color: white;
+    height: 288px;
+    width: 411px;
+    border: 0.5px solid black;
+    left: 355px;
+    top: 20px;
+}
+
+#lay1-main > article:nth-child(3){
+    position: absolute;
+    background-color: white;
+    height: 300px;
+    width: 178px;
+    border: 0.5px solid black;
+    left: 283px;
+    top: 448px;
+}
+
+aside > ul{
+    margin: 25px auto;
+}
+
+aside > ul > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    color:  rgb(48, 47, 46);
+}
+
+aside > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+aside > ul > li > a:active{
+    color:  rgb(221, 23, 23);
+    text-decoration: underline;
+}
+
+/*-------------------- layuot2 -------------------*/
+
+#lay2 > main {
+    height: 649px;
+    width: 813px;
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+}
+
+#lay2 > aside {
+    height: 649px;
+    width: 184px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+#nav-layout2.resh{
+    background-image: url("../images/layout2.PNG");
+    height: 183px;
+    padding-top: 1px;
+}
+
+.resh > ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px auto auto 45px;
+}
+
+.resh > ul > li > a{
+    text-decoration: none;
+    font-size: 40px;
+    color:  rgb(48, 47, 46);
+    display: flex;
+}
+
+.resh > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+nav > ul > li > a:active{
+    text-decoration: underline;
+    color: rgb(221, 23, 23);
+}
+
+#lay2 > main > article:nth-child(1){
+    position: absolute;
+    background-color: white;
+    height: 87px;
+    width: 123px;
+    border: 0.5px solid black;
+    left: 470px;
+    top: 67px;
+}
+
+#lay2 > main > article:nth-child(2){
+    position: absolute;
+    background-color: white;
+    height: 87px;
+    width: 123px;
+    border: 0.5px solid black;
+    left: 633px;
+    top: 67px;
+}
+
+#lay2 > main > article:nth-child(3){
+    position: absolute;
+    background-color: white;
+    height: 110px;
+    width: 270px;
+    border: 0.5px solid black;
+    left: 57px;
+    top: 413px;
+}
+
+#lay2 > main > article:nth-child(4){
+    position: absolute;
+    background-color: white;
+    height: 286px;
+    width: 413px;
+    border: 0.5px solid black;
+    left: 345px;
+    top: 238px;
+}
+
+#foo2{
+    position: fixed;
+    bottom: 0px;
+}
+
+/*-------------------- layuot3 -------------------*/
+
+#nav-layout3{
+    background-image: url("../images/layout3.PNG");
+    height: 183px;
+    padding-top: 1px;
+}
+
+#wrapper3 > main{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 650px;
+    background-color: whitesmoke;
+}
+
+#wrapper3 > main > article{
+    background-color: white;
+    height: 315px;
+    width: 203px;
+    border: 0.5px solid black;
+    margin-left: 87px;
+    margin-top: 48px;
+    font-size: 280px;
+    color: white;
+}
+
+button{
+    font-size: 20px;
+    border-radius: 15px;
+    float:left;
+}
+
+/*-------------------- mobail -------------------*/
+
+@media (max-width: 577px){
+
+    #wrapper3, #wrapper3 > main{
+        max-width: 577px;
+        width: auto;
+    }
+
+    #nav-layout3{
+        height: 163px;
+        padding-top: 1px;
+    }
+
+    #nav-layout3 > ul{
+        display: none;
+    }
+
+    #nav-layout3 > a{
+        background: url("../images/icon.png") no-repeat;
+        height: 64px;
+        display: block;
+    }
+
+    button{
+        display: none;
+    }
+    
+    #wrapper3 > main > article{
+        margin-left: 32px;
+    }
+}
+
